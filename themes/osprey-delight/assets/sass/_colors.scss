@@ -1,35 +1,17 @@
 // https://coolors.co/1e1e1e-4e6b6c-f7f7f7-ffffff-da784d
 
-:root {
-    --black: #212121;
-    --storm: #4E6B6C;
-    --smoke: #F7F7F7;
-    --accent: $accent_color;
-    --white: #FFFFFF;
-    --grey: grey;
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --black: #212121;
-        --storm: #4E6B6C;
-        --smoke: #F7F7F7;
-        --accent: $accent_color;
-        --white: #FFFFFF;
-        --grey: grey;
-    }
-}
-
-$white: var(--white);
-$storm: var(--storm);
-$gray: var(--gray);
-$accent: $accent_color;
-$black: var(--black);
-$smoke:var(--smoke);
-
+/*
 $black: #212121;
 $storm: #4E6B6C;
 $smoke: #F7F7F7;
 $accent: $accent_color;
 $white: #FFFFFF;
+$grey: grey;
+*/
+
+$black: #FFFFFF;
+$storm: #5d8283;
+$smoke: hsl(0, 0%, 21%);
+$accent: $accent_color;
+$white: #212121;
 $grey: grey;
