@@ -1,0 +1,39 @@
+baseURL = "http://wilmhit.pw/"
+languageCode = "pl-PL"
+title = "Viphouse"
+theme = "osprey-delight"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+enableEmoji = true
+
+[Params]
+  description = "Apartament VipHouse"
+  tagline = "Miejsce na twoją imprezę"
+  logoBig = "/images/viphouse-logo.png"
+  # [str] This is the logo that will be shown in the left corner of the nav bar.
+  #   Usually, you would like to use something bigger than a favicon - but not too big either.
+  #   Make sure that the image does not overlay the nav links. Don't be afraid of experimenting! 
+  logoSmall = "viphouse-small.png"
+  favicon = "favicon.png"
+  enforceSinglePage = false
+  copyright = true
+  credit = true
+
+[Params.Feat]
+  lazyloading = true
+
+[[menu.main]]
+  name = "Impreza"
+  url  = "/#party"
+  weight = 1
+[[menu.main]]
+  name = "Galeria"
+  url  = "/#gallery"
+  weight = 2
+[[menu.main]]
+  name = "Video"
+  url  = "/#clips"
+  weight = 3
+[[menu.main]]
+  name = "O lokalu"
+  url  = "/#about"
+  weight = 4

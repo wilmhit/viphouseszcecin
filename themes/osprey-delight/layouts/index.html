@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "body-top" . }}
+    <main>
+
+      <!-- Party -->
+      {{ partial "party.html" . }}
+
+      <!-- Gallery -->
+      {{ if not (eq (len (where .Site.RegularPages "Section" "gallery")) 0) }}
+        {{ partial "gallery.html" . }}
+        {{ partial "modals.html" . }}
+      {{ end }}
+
+      <!-- About -->
+      {{ partial "clips.html" . }}
+      {{ partial "about.html" . }}
+
+    </main>
+    {{ partial "footer.html" . }}
+    {{ partial "body-bottom" . }}
+  </body>
+</html>

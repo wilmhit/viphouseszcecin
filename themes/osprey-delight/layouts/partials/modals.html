@@ -1,0 +1,20 @@
+{{ range where .Site.RegularPages "Section" "gallery" }}
+
+  <!-- First 4 characters of each gallery page's unique ID -->
+  <!-- {{ $modalID := (slicestr .File.UniqueID 0 4) }} -->
+  {{ $modalID := .File.BaseFileName }}
+
+  {{ $scratch := newScratch }}
+  {{ if eq .Params.type "github" -}}
+  {{ $scratch.Set "repo" (getJSON "https://api.github.com/repos/" .Params.github.repo) }}
+  {{- end }}
+
+  <div id="modal-{{ $modalID }}" class="modal">
+
+    <!-- Modal box -->
+    <div class="modal-box">
+      <span class="close icon icon-cancel-circled"></span>
+          {{ partial "gallery-img" . }}
+    </div>
+  </div>
+{{ end }}
