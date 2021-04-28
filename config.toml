@@ -1,7 +1,8 @@
-baseURL = "http://viphouse.szczecin.pl/"
+baseURL = "https://viphouse.szczecin.pl/"
 languageCode = "pl-PL"
 title = "Viphouse"
 theme = "osprey-delight"
+canonifyURLS = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
 enableEmoji = true
 
