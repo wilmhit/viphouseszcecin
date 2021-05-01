@@ -1,7 +1,7 @@
 ---
 title: "Viphouse2"
 date: "2021-04-03T17:44:15+02:00"
-image: "viphouse2.jpg"
+image: "viphouse2.webp"
 color: "#fff"
 type: "normal"
 draft: false

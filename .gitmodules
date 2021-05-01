@@ -1,0 +1,3 @@
+[submodule "themes/osprey-delight"]
+	path = themes/osprey-delight
+	url = git@github.com:kdevo/osprey-delight.git
