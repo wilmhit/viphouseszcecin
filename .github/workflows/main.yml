@@ -1,0 +1,14 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Action Hugo
+        uses: kevvurs/action-hugo@v1.0-rc2
+      - name: Deploy
+        run: echo "Hello World"
