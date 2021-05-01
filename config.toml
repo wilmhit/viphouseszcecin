@@ -11,6 +11,7 @@ enableEmoji = true
   tagline = "Miejsce na twoją imprezę"
   logoBig = "/images/viphouse-logo.png"
   logoSmall = "/images/viphouse-small.png"
+  background = "background.jpg"
   favicon = "favicon.png"
   enforceSinglePage = false
   copyright = true
@@ -18,20 +19,30 @@ enableEmoji = true
 
 [Params.Feat]
   lazyloading = true
+  useTermynal = false
+
+[Params.Social]
+
+[Params.Image.Gallery]
+  resize = "1000x"
 
 [[menu.main]]
   name = "Impreza"
+  identifier = "party"
   url  = "/#party"
   weight = 1
 [[menu.main]]
   name = "Galeria"
+  identifier = "gallery"
   url  = "/#gallery"
   weight = 2
 [[menu.main]]
   name = "Video"
+  identifier = "clips"
   url  = "/#clips"
   weight = 3
 [[menu.main]]
   name = "O lokalu"
+  identifier = "about"
   url  = "/#about"
   weight = 4

@@ -1,0 +1,101 @@
+.modal {
+  display: flex;
+  visibility: hidden;
+  position: fixed;
+  z-index: -1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-x: hidden;
+  transition: opacity .1s ease-out;
+  // opacity: 0;
+  background-color: rgba(33, 33, 33, .75);
+
+  &.active {
+    visibility: visible;
+    z-index: 1000;
+    // opacity: 1;
+  }
+
+  a {
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  article {
+    a { 
+      color: $accent-color
+    }
+  }
+}
+
+.modal-box {
+  position: relative;
+  margin: auto;
+  height: fit-content;
+  width: fit-content;
+  background-color: transparent;
+}
+
+.modal-container {
+  overflow: hidden;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+}
+
+.modal-header {
+  height: 100%;
+  width: 100%;
+}
+
+.modal-header-img-container {
+  display: flex;
+  align-items: center;
+  background-color: transparent !important;
+  justify-content: center;
+  height: 100%;
+  img {
+    border-radius: 7px;
+    height: 90vh !important;
+    width: auto !important;
+  }
+}
+
+.modal-content {
+  display:none;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: $accent-color;
+  font-size: 1.75em;
+  font-weight: bold;
+  z-index: 100;
+  opacity: 50%;
+  transition: opacity .2s ease-out;
+  cursor: pointer;
+  transform: translate(50%, -50%);
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    text-decoration: none;
+  }
+}
+
+.repo-info {
+  color: $alt-text-color;
+  a {
+    color: $alt-text-color
+  }
+  font-size: 0.65em;
+  .icon {
+    color: $alt-text-color;
+  }
+}
