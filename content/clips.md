@@ -5,7 +5,4 @@ draft: false
 ---
 
 {{< youtube zgCk4FpDFts >}}
-**** 
-
-****
 {{< youtube 6UgJj8z31v8 >}}
