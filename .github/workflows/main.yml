@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Checkout sumbodules
-        uses: chris-short/github-action-git-submodules@v0.1.0
+        uses: textbook/git-checkout-submodule-action@2.1.1
       - name: Build Hugo
         uses: lowply/build-hugo@v0.82.1
       - name: S3 Deploy
