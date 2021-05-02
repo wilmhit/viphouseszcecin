@@ -18,6 +18,6 @@ jobs:
           AWS_REGION: ${{ secrets.AWS_REGION }}
           AWS_BUCKET_NAME: viphouse.szczecin.pl
           SOURCE: public
-          TARGET: /
+          TARGET: .
           WITH_DELETE: true
           
