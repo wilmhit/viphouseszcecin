@@ -11,4 +11,13 @@ jobs:
       - name: Build Hugo
         uses: lowply/build-hugo@v0.82.1
       - name: Deploy
-        run: echo "Hello World"
+        uses: raulanatol/aws-s3-docker-action@v1.0
+        with:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_SECRET_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          AWS_BUCKET_NAME: viphouse.szczecin.pl
+          SOURCE: public
+          TARGET: /
+          WITH_DELETE: true
+          
