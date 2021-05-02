@@ -7,10 +7,13 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Checkout sumbodules
+        uses: chris-short/github-action-git-submodules@v0.1.0
       - name: Build Hugo
         uses: lowply/build-hugo@v0.82.1
-      - name: Deploy
+      - name: S3 Deploy
         uses: raulanatol/aws-s3-docker-action@v1.0
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_SECRET_ID }}
