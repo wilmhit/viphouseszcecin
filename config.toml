@@ -3,6 +3,8 @@ languageCode = "pl-PL"
 title = "Viphouse"
 theme = "osprey-delight"
 canonifyURLS = true
+tags = ["Impreza", "Szczecin", "Aparatament", "Wynajem", "Bankiet",
+"Party", "Wesele", "Spotkania", "Deptak Bogusława", "Centrum"]
 disableKinds = ["taxonomy", "taxonomyTerm"]
 enableEmoji = true
 
