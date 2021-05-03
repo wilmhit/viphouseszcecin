@@ -18,8 +18,7 @@ enableEmoji = true
   credit = true
 
 [Params.Feat]
-  lazyloading = true
-  useTermynal = false
+  useLazySizes = true 
 
 [Params.Social]
 
