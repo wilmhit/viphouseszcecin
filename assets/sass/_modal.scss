@@ -43,13 +43,13 @@
 .modal-container {
   overflow: hidden;
   background-color: transparent;
-  height: 100%;
-  width: 100%;
+  height: fit-content;
+  width: fit-content;
 }
 
 .modal-header {
-  height: 100%;
-  width: 100%;
+  height: fit-content;
+  width: fit-content;
 }
 
 .modal-header-img-container {
@@ -57,11 +57,14 @@
   align-items: center;
   background-color: transparent !important;
   justify-content: center;
-  height: 100%;
+  height: fit-content;
   img {
     border-radius: 7px;
-    height: 90vh !important;
+    max-height: 90vh !important;
+    max-width: 90vw !important;
     width: auto !important;
+    height: auto !important;
+    object-fit: contain;
   }
 }
 
